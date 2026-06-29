@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Optimization -->
+    <title>Ayush Pangaonkar | Full Stack Developer & Software Engineer</title>
+    <meta name="description"
+        content="Portfolio of Ayush Pangaonkar, a Software Engineer Intern and B.Tech 2026 Graduate specializing in Full Stack Development (React, Django, Python, MySQL).">
+    <meta name="keywords"
+        content="Ayush Pangaonkar, Portfolio, Full Stack Developer, Software Engineer Intern, Datatech Labs, B.Tech Graduate 2026, Django, Python, React, MySQL">
+    <meta name="author" content="Ayush Pangaonkar">
+
+    <!-- Open Graph for Social Media sharing -->
+    <meta property="og:title" content="Ayush Pangaonkar | Full Stack Developer & Software Engineer">
+    <meta property="og:description"
+        content="Explore my portfolio showcasing projects and experience in Full Stack Web Development using React, Python, Django, and MySQL.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons for UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Devicon Icons for Tech Stack -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body class="dark-theme">
+
+    <!-- Custom Mouse Cursor Trailer (Hidden on mobile) -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#home" class="logo" id="nav-logo">
+                <span>A</span>P<span>.</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#resume" class="nav-link">Resume</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Utility Controls (Theme + Hamburger) -->
+            <div class="nav-controls">
+                <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                <button class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Toggle Menu">
+                    <div class="hamburger-line line1"></div>
+                    <div class="hamburger-line line2"></div>
+                    <div class="hamburger-line line3"></div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Panel -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#experience" class="mobile-link">Experience</a></li>
+            <li><a href="#skills" class="mobile-link">Skills</a></li>
+            <li><a href="#projects" class="mobile-link">Projects</a></li>
+            <li><a href="#resume" class="mobile-link">Resume</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Container -->
+    <main>
+
+        <!-- 1. HERO SECTION -->
+        <section class="hero-section section-padding" id="home">
+            <div class="grid-container hero-grid">
+                <div class="hero-content reveal-up">
+                    <span class="hero-tag">Welcome to my space</span>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Ayush Pangaonkar</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a&nbsp;<span class="typewriter-text" id="typewriter"></span><span class="cursor-blink">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        An ambitious Full Stack Developer and 2026 B.Tech graduate. Passionate about engineering
+                        high-performance, scalable web systems using Python, Django, React, and MySQL. Ready to turn
+                        complex problems into elegant code.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span> <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="Ayush_pangaonkar.pdf" class="btn btn-secondary" download="Ayush_Pangaonkar_Resume.pdf">
+                            <span>Download Resume</span> <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://linkedin.com/in/ayush-pangaonkar-826785259/" target="_blank"
+                            rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon"
+                            aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="mailto:ayushpangonkar1@gmail.com" class="social-icon" aria-label="Email">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal-up">
+                    <div class="visual-blob-container">
+                        <!-- Glassmorphic graphic block simulating an IDE editor -->
+                        <div class="visual-card">
+                            <div class="card-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="code-editor-content">
+                                <span class="code-line"><span class="c-keyword">const</span> developer = {</span>
+                                <span class="code-line indent"><span class="c-prop">name</span>: <span
+                                        class="c-val">"Ayush Pangaonkar"</span>,</span>
+                                <span class="code-line indent"><span class="c-prop">degree</span>: <span
+                                        class="c-val">"B.Tech (E&TC)"</span>,</span>
+                                <span class="code-line indent"><span class="c-prop">gradYear</span>: <span
+                                        class="c-num">2026</span>,</span>
+                                <span class="code-line indent"><span class="c-prop">skills</span>: [</span>
+                                <span class="code-line double-indent"><span class="c-val">"React"</span>, <span
+                                        class="c-val">"Django"</span>, <span class="c-val">"Python"</span>,</span>
+                                <span class="code-line double-indent"><span class="c-val">"DRF"</span>, <span
+                                        class="c-val">"MySQL"</span>, <span class="c-val">"REST APIs"</span></span>
+                                <span class="code-line indent">],</span>
+                                <span class="code-line indent"><span class="c-prop">role</span>: <span
+                                        class="c-val">"Software Engineer Intern"</span>,</span>
+                                <span class="code-line indent"><span class="c-prop">status</span>: <span
+                                        class="c-val">"Open to Opportunities"</span></span>
+                                <span class="code-line">};</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Scroll Indicator -->
+            <a href="#about" class="scroll-down-indicator" aria-label="Scroll Down">
+                <div class="mouse-icon">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- 2. ABOUT ME SECTION -->
+        <section class="about-section section-padding" id="about">
+            <div class="section-container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Overview</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="grid-container about-grid">
+                    <div class="about-text reveal-up">
+                        <h3>Passionate Developer & Lifelong Learner</h3>
+                        <p>
+                            Hello! I am a final-year B.Tech student with a keen eye for crafting modular, robust, and
+                            interactive digital experiences. My specialization lies in backend engineering with Django &
+                            Python coupled with rich, modern frontend systems using React.js.
+                        </p>
+                        <p>
+                            My approach centers on creating performant database models, writing reusable software
+                            architectures, and designing sleek user interfaces that are both aesthetically pleasing and
+                            fully responsive. Having worked in cross-functional configurations, I enjoy brainstorming
+                            system flows and shipping production-ready web features.
+                        </p>
+                        <div class="about-details-grid">
+                            <div class="detail-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Education</h4>
+                                    <p>B.Tech Graduate (2026)</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <div>
+                                    <h4>Specialization</h4>
+                                    <p>Full Stack Development</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Pune, Maharashtra, India</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <h4>Contact Email</h4>
+                                    <p>ayushpangonkar1@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats-cards reveal-up">
+                        <div class="stat-card">
+                            <span class="stat-num">1+</span>
+                            <span class="stat-label">Years Coding</span>
+                        </div>
+                        <div class="stat-card highlighted">
+                            <span class="stat-num">1</span>
+                            <span class="stat-label">Professional Internship</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">5+</span>
+                            <span class="stat-label">Full Stack Projects</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">Commitment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. EXPERIENCE SECTION -->
+        <section class="experience-section section-padding" id="experience">
+            <div class="section-container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Professional History</span>
+                    <h2 class="section-title">My Journey</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="timeline-container">
+                    <!-- Timeline Card: Internship -->
+                    <div class="timeline-item reveal-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jan 2026 - Present</div>
+                        <div class="timeline-content card-hover">
+                            <div class="timeline-header">
+                                <div class="role-company">
+                                    <h3>Software Engineer Intern</h3>
+                                    <span class="company">Datatech Labs, Pune</span>
+                                </div>
+                                <span class="badge">Current Role</span>
+                            </div>
+                            <p class="timeline-description">
+                                Actively developing and scaling enterprise web modules using modern web technologies.
+                                Bridging the gap between UI design and robust backend services.
+                            </p>
+                            <ul class="timeline-highlights">
+                                <li>Designed and deployed secure, optimized REST APIs using Django Rest Framework (DRF)
+                                    for seamless mobile and web communication.</li>
+                                <li>Integrated React components into production frontends, developing responsive layouts
+                                    and real-time dashboard elements.</li>
+                                <li>Optimized MySQL query performances, implemented database triggers, and improved data
+                                    normalization to handle high volumes of request loads.</li>
+                                <li>Participated in daily agile standups, code reviews, and contributed to CI/CD
+                                    pipeline deployments.</li>
+                            </ul>
+                            <div class="timeline-skills">
+                                <span class="tech-tag"><i class="devicon-python-plain"></i> Python</span>
+                                <span class="tech-tag"><i class="devicon-django-plain"></i> Django</span>
+                                <span class="tech-tag">DRF</span>
+                                <span class="tech-tag"><i class="devicon-react-original"></i> React</span>
+                                <span class="tech-tag"><i class="devicon-mysql-plain"></i> MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Card: Graduation -->
+                    <div class="timeline-item reveal-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 - 2026</div>
+                        <div class="timeline-content card-hover">
+                            <div class="timeline-header">
+                                <div class="role-company">
+                                    <h3>Bachelor of Technology (B.Tech)</h3>
+                                    <span class="company">Electronics and Telecommunications Engineering</span>
+                                </div>
+                                <span class="badge badge-academic">Academic</span>
+                            </div>
+                            <p class="timeline-description">
+                                Pursuing a rigorous engineering curriculum focusing on data structures, algorithms,
+                                object-oriented design, databases, and software engineering methodologies.
+                            </p>
+                            <ul class="timeline-highlights">
+                                <li>Core coursework: DBMS, OS, Data Structures & Algorithms, Web Engineering, Advanced
+                                    Computer Networks.</li>
+                                <li>Undertook multiple full-stack academic projects including the Smart Resume Screener
+                                    application.</li>
+                                <li>Maintained a strong academic record, actively participating in coding competitions
+                                    and technical hackathons.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SKILLS SECTION -->
+        <section class="skills-section section-padding" id="skills">
+            <div class="section-container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Core Capabilities</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="grid-container skills-grid">
+                    <!-- Core Skills Category: Languages & Frontend -->
+                    <div class="skills-card reveal-up card-hover">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-code icon-color"></i>
+                            <h3>Languages & Frontend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-progress-wrapper">
+                                <div class="skill-name-percent">
+                                    <span><i class="devicon-python-plain colored"></i> Python</span>
+                                    <span class="percent-val">90%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-wrapper">
+                                <div class="skill-name-percent">
+                                    <span><i class="devicon-javascript-plain colored"></i> JavaScript (ES6+)</span>
+                                    <span class="percent-val">85%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-wrapper">
+                                <div class="skill-name-percent">
+                                    <span><i class="devicon-react-original colored"></i> React.js</span>
+                                    <span class="percent-val">85%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-wrapper">
+                                <div class="skill-name-percent">
+                                    <span><i class="devicon-html5-plain colored"></i> HTML5 / CSS3</span>
+                                    <span class="percent-val">95%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Core Skills Category: Backend & Database -->
+                    <div class="skills-card reveal-up card-hover">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-server icon-color"></i>
+                            <h3>Backend & Database</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-progress-wrapper">
+                                <div class="skill-name-percent">
+                                    <span><i class="devicon-django-plain colored"></i> Django Framework</span>
+                                    <span class="percent-val">88%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar" style="width: 88%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-wrapper">
+                                <div class="skill-name-percent">
+                                    <span><i class="devicon-django-plain"></i> Django REST Framework (DRF)</span>
+                                    <span class="percent-val">85%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-wrapper">
+                                <div class="skill-name-percent">
+                                    <span><i class="devicon-mysql-plain colored"></i> MySQL / Relational DBs</span>
+                                    <span class="percent-val">80%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-wrapper">
+                                <div class="skill-name-percent">
+                                    <span><i class="fa-solid fa-link"></i> RESTful API Design</span>
+                                    <span class="percent-val">90%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Core Skills Category: Tools & Workflows -->
+                    <div class="skills-card reveal-up card-hover">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-screwdriver-wrench icon-color"></i>
+                            <h3>Tools & Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-progress-wrapper">
+                                <div class="skill-name-percent">
+                                    <span><i class="devicon-git-plain colored"></i> Git & GitHub Version Control</span>
+                                    <span class="percent-val">90%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-wrapper">
+                                <div class="skill-name-percent">
+                                    <span><i class="devicon-docker-plain colored"></i> Docker Containerization</span>
+                                    <span class="percent-val">70%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-wrapper">
+                                <div class="skill-name-percent">
+                                    <span><i class="fa-solid fa-bug"></i> Debugging & Testing</span>
+                                    <span class="percent-val">85%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-wrapper">
+                                <div class="skill-name-percent">
+                                    <span><i class="fa-solid fa-gears"></i> Agile Methodologies</span>
+                                    <span class="percent-val">80%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PROJECTS SECTION -->
+        <section class="projects-section section-padding" id="projects">
+            <div class="section-container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">My Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="filter-controls reveal-up">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="react">React</button>
+                    <button class="filter-btn" data-filter="django">Django/Python</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="grid-container projects-grid">
+
+                    <!-- Project 1: Smart Resume Screening -->
+                    <div class="project-card reveal-up card-hover" data-category="django fullstack react">
+                        <div class="project-img-wrapper">
+                            <div class="project-icon-placeholder">
+                                <i class="fa-solid fa-file-invoice"></i>
+                            </div>
+                            <div class="project-badge">Academic Project</div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Smart Resume Screening App</h3>
+                            <p>
+                                An automated AI-powered recruitment engine that parses uploads, matches candidate
+                                profiles to job specifications using NLP algorithms, and ranks applicant profiles
+                                dynamically.
+                            </p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Django</span>
+                                <span>DRF</span>
+                                <span>MySQL</span>
+                                <span>NLP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                                    class="proj-link-btn" aria-label="View Github Repository">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="proj-link-btn disabled" aria-label="Project Live Link">
+                                    <i class="fa-solid fa-up-right-from-square"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: E-Commerce REST API -->
+                    <div class="project-card reveal-up card-hover" data-category="django">
+                        <div class="project-img-wrapper">
+                            <div class="project-icon-placeholder">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </div>
+                            <div class="project-badge">Backend</div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Enterprise E-Commerce API</h3>
+                            <p>
+                                A robust, high-performance web API that drives shopping platforms. Integrates
+                                token-based authentication (JWT), dynamic filters, cart processes, and order checkouts.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Django</span>
+                                <span>DRF</span>
+                                <span>MySQL</span>
+                                <span>JWT</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                                    class="proj-link-btn" aria-label="View Github Repository">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="proj-link-btn disabled" aria-label="Project Live Link">
+                                    <i class="fa-solid fa-up-right-from-square"></i> Docs
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: DevCollab Platform -->
+                    <div class="project-card reveal-up card-hover" data-category="react fullstack">
+                        <div class="project-img-wrapper">
+                            <div class="project-icon-placeholder">
+                                <i class="fa-solid fa-users-rectangle"></i>
+                            </div>
+                            <div class="project-badge">Real-Time</div>
+                        </div>
+                        <div class="project-details">
+                            <h3>DevCollab Workspace</h3>
+                            <p>
+                                A real-time collaboration workspace where engineering teams can edit code, compile code
+                                fragments in active runtimes, and message one another via interactive text.
+                            </p>
+                            <div class="project-tech">
+                                <span>React.js</span>
+                                <span>NodeJS</span>
+                                <span>WebSockets</span>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                                    class="proj-link-btn" aria-label="View Github Repository">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="proj-link-btn disabled" aria-label="Project Live Link">
+                                    <i class="fa-solid fa-up-right-from-square"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. RESUME SECTION -->
+        <section class="resume-section section-padding" id="resume">
+            <div class="section-container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">My Credentials</span>
+                    <h2 class="section-title">Resume</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="resume-wrapper reveal-up">
+                    <!-- Resume Action Buttons -->
+                    <div class="resume-actions">
+                        <a href="Ayush_pangaonkar.pdf" download="Ayush_Pangaonkar_Resume.pdf" class="btn btn-primary" id="resume-download-btn">
+                            <span>Download PDF</span> <i class="fa-solid fa-download"></i>
+                        </a>
+                        <a href="Ayush_pangaonkar.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="resume-view-btn">
+                            <span>Open in New Tab</span> <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <!-- PDF Embed Viewer -->
+                    <div class="resume-embed-container">
+                        <div class="resume-embed-frame">
+                            <div class="embed-header">
+                                <div class="embed-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="embed-title"><i class="fa-regular fa-file-pdf"></i> Ayush_Pangaonkar_Resume.pdf</span>
+                            </div>
+                            <iframe
+                                src="Ayush_pangaonkar.pdf"
+                                class="resume-iframe"
+                                id="resume-iframe"
+                                title="Ayush Pangaonkar Resume"
+                                loading="lazy">
+                                <p>Your browser does not support embedded PDFs.
+                                    <a href="Ayush_pangaonkar.pdf" download>Download the resume instead</a>.
+                                </p>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CONTACT SECTION -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="section-container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="grid-container contact-grid">
+                    <!-- Contact Cards info -->
+                    <div class="contact-info reveal-up">
+                        <h3>Connect with Me</h3>
+                        <p>
+                            Interested in collaborating on a web project, offering a software internship, or discussing
+                            developer roles? Feel free to reach out. I am highly responsive.
+                        </p>
+
+                        <div class="info-details">
+                            <div class="info-card card-hover">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Email Me</h4>
+                                    <a href="mailto:ayushpangonkar1@gmail.com">ayushpangonkar1@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="info-card card-hover">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Call Me</h4>
+                                    <a href="tel:+918788925950">+91 8788925950</a>
+                                </div>
+                            </div>
+
+                            <div class="info-card card-hover">
+                                <div class="info-icon">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://linkedin.com/in/ayush-pangaonkar-826785259/" target="_blank"
+                                        rel="noopener noreferrer">linkedin.com/in/ayush-pangaonkar-826785259/</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper reveal-up">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="form-name" class="form-control" placeholder=" " required>
+                                    <label for="form-name" class="form-label">Full Name</label>
+                                    <span class="input-border"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="form-email" class="form-control" placeholder=" " required>
+                                    <label for="form-email" class="form-label">Email Address</label>
+                                    <span class="input-border"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="form-subject" class="form-control" placeholder=" " required>
+                                <label for="form-subject" class="form-label">Subject</label>
+                                <span class="input-border"></span>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="form-message" class="form-control" rows="5" placeholder=" "
+                                    required></textarea>
+                                <label for="form-message" class="form-label">Your Message</label>
+                                <span class="input-border"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span> <i class="fa-regular fa-paper-plane"></i>
+                            </button>
+                        </form>
+
+                        <!-- Toast Message for feedback -->
+                        <div class="toast" id="form-toast">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span id="toast-message">Message sent successfully!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span>A</span>P<span>.</span>
+            </div>
+            <p class="footer-desc">Crafting premium, robust full-stack solutions.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="footer-copy">
+                &copy; <span id="year">2026</span> Ayush Pangaonkar. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Back-to-Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+</body>
+
+</html>
