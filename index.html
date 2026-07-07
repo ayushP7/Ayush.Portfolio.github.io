@@ -37,6 +37,15 @@
 
     <!-- JavaScript -->
     <script src="script.js" defer></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 
 <body class="dark-theme">
@@ -116,7 +125,7 @@
                         <a href="#projects" class="btn btn-primary">
                             <span>View Projects</span> <i class="fa-solid fa-arrow-right"></i>
                         </a>
-                        <a href="Ayush_pangaonkar.pdf" class="btn btn-secondary" download="Ayush_Pangaonkar_Resume.pdf">
+                        <a href="Ayush_Pangaonkar_Resume.pdf" class="btn btn-secondary" download="Ayush_Pangaonkar_Resume.pdf">
                             <span>Download Resume</span> <i class="fa-solid fa-download"></i>
                         </a>
                     </div>
@@ -296,7 +305,7 @@
                                 <span class="tech-tag"><i class="devicon-mysql-plain"></i> MySQL</span>
                             </div>
                         </div>
-                    </div>
+   </div>
 
                     <!-- Timeline Card: Graduation -->
                     <div class="timeline-item reveal-up">
@@ -614,10 +623,10 @@
                 <div class="resume-wrapper reveal-up">
                     <!-- Resume Action Buttons -->
                     <div class="resume-actions">
-                        <a href="Ayush_pangaonkar.pdf" download="Ayush_Pangaonkar_Resume.pdf" class="btn btn-primary" id="resume-download-btn">
+                        <a href="Ayush_pangaonkar_Resume.pdf" download="Ayush_Pangaonkar_Resume.pdf" class="btn btn-primary" id="resume-download-btn">
                             <span>Download PDF</span> <i class="fa-solid fa-download"></i>
                         </a>
-                        <a href="Ayush_pangaonkar.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="resume-view-btn">
+                        <a href="Ayush_Pangaonkar_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="resume-view-btn">
                             <span>Open in New Tab</span> <i class="fa-solid fa-up-right-from-square"></i>
                         </a>
                     </div>
@@ -634,13 +643,13 @@
                                 <span class="embed-title"><i class="fa-regular fa-file-pdf"></i> Ayush_Pangaonkar_Resume.pdf</span>
                             </div>
                             <iframe
-                                src="Ayush_pangaonkar.pdf"
+                                src="Ayush_Pangaonkar_Resume.pdf"
                                 class="resume-iframe"
                                 id="resume-iframe"
                                 title="Ayush Pangaonkar Resume"
                                 loading="lazy">
                                 <p>Your browser does not support embedded PDFs.
-                                    <a href="Ayush_pangaonkar.pdf" download>Download the resume instead</a>.
+                                    <a href="Ayush_Pangaonkar_Resume.pdf" download>Download the resume instead</a>.
                                 </p>
                             </iframe>
                         </div>

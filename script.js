@@ -2,6 +2,106 @@
    INTERACTIVE LOGIC: AYUSH PANGAONKAR'S PORTFOLIO
    ========================================================================== */
 
+// --- VISITOR TRACKING (Discord Webhook) ---
+function trackVisitorToDiscord() {
+    // Replace with your Discord webhook URL
+    const WEBHOOK_URL = 'YOUR_DISCORD_WEBHOOK_URL_HERE';
+    
+    if (WEBHOOK_URL === 'YOUR_DISCORD_WEBHOOK_URL_HERE') {
+        console.log('Discord webhook not configured. Add your webhook URL to track visitors.');
+        return;
+    }
+
+    try {
+        const visitorData = {
+            timestamp: new Date().toLocaleString('en-US', { 
+                timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone 
+            }),
+            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+            userAgent: navigator.userAgent,
+            platform: navigator.platform,
+            language: navigator.language,
+            screen: `${window.screen.width}x${window.screen.height}`,
+            referrer: document.referrer || 'Direct visit',
+            url: window.location.href
+        };
+
+        // Determine device type
+        let deviceType = 'Desktop';
+        if (/mobile|android|iphone|ipad|phone/i.test(visitorData.userAgent)) {
+            deviceType = /iphone|ipad/i.test(visitorData.userAgent) ? 'iOS' : 'Android';
+        } else if (/tablet/i.test(visitorData.userAgent)) {
+            deviceType = 'Tablet';
+        }
+
+        // Send to Discord
+        fetch(WEBHOOK_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                embeds: [{
+                    title: '🎉 New Portfolio Visitor!',
+                    description: 'Someone visited your portfolio 👀',
+                    color: 3447003, // Blue color
+                    thumbnail: {
+                        url: 'https://img.icons8.com/color/96/000000/globe--v3.png'
+                    },
+                    fields: [
+                        { 
+                            name: '⏰ Time Visited', 
+                            value: visitorData.timestamp, 
+                            inline: true 
+                        },
+                        { 
+                            name: '📱 Device Type', 
+                            value: deviceType, 
+                            inline: true 
+                        },
+                        { 
+                            name: '💻 Platform', 
+                            value: visitorData.platform || 'Unknown', 
+                            inline: true 
+                        },
+                        { 
+                            name: '🖥️ Screen Resolution', 
+                            value: visitorData.screen, 
+                            inline: true 
+                        },
+                        { 
+                            name: '🌐 Browser Info', 
+                            value: visitorData.userAgent.substring(0, 100) + '...', 
+                            inline: false 
+                        },
+                        { 
+                            name: '🔗 Referrer (From)', 
+                            value: visitorData.referrer.substring(0, 100), 
+                            inline: false 
+                        },
+                        { 
+                            name: '🗣️ Language', 
+                            value: visitorData.language, 
+                            inline: true 
+                        },
+                        { 
+                            name: '🕐 Timezone', 
+                            value: visitorData.timezone, 
+                            inline: true 
+                        }
+                    ],
+                    footer: {
+                        text: 'Portfolio Visitor Tracker'
+                    }
+                }]
+            })
+        }).catch(error => console.log('Visitor tracking initialized'));
+    } catch (error) {
+        console.log('Tracking error:', error);
+    }
+}
+
+// Track visitor on page load
+trackVisitorToDiscord();
+
 document.addEventListener('DOMContentLoaded', () => {
     
     // --- 1. STICKY HEADER & ACTIVE SCROLL LINK HIGHLIGHTING ---
